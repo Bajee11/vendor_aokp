@@ -1,11 +1,11 @@
 # Inherit AOSP device configuration for d2att.
 $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/aokp/configs/common.mk)
-
 # Inherit GSM common stuff.
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
+
+# Inherit AOKP common bits
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_d2att
