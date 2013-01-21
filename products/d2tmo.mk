@@ -1,7 +1,7 @@
-# Inherit AOSP device configuration for d2att.
-$(call inherit-product, device/samsung/d2att/full_d2att.mk)
+# Inherit AOSP device configuration for d2tmo.
+$(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
-# Inherit GSM common stuff.
+# Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit common product files.
@@ -10,13 +10,13 @@ $(call inherit-product, vendor/aokp/configs/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d2-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_d2att
+PRODUCT_NAME := aokp_d2tmo
 PRODUCT_BRAND := Samsung
-PRODUCT_DEVICE := d2att
-PRODUCT_MODEL := SGH-I747
+PRODUCT_DEVICE := d2tmo
+PRODUCT_MODEL := SGH-T999
 PRODUCT_MANUFACTURER := Samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2att TARGET_DEVICE=d2att BUILD_FINGERPRINT="samsung/d2uc/d2att:4.0.4/IMM76D/I747UCALH9:user/release-keys" PRIVATE_BUILD_DESC="d2att-user 4.0.4 IMM76D I747UCALH9 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2tmo TARGET_DEVICE=d2tmo BUILD_FINGERPRINT="d2tmo-user 4.1.1 JRO03L T999UVDLH3 release-keys" PRIVATE_BUILD_DESC="samsung/d2tmo/d2tmo:4.1.1/JRO03L/T999UVDLH3:user/release-keys"
 
 # boot animation
 PRODUCT_COPY_FILES += \
